@@ -1,0 +1,10 @@
+name: lvgl
+version: 9.4.0
+license: MIT
+repository: https://github.com/lvgl/lvgl
+
+description: |
+  Lightweight and versatile graphics library.
+
+scripts:
+  postinstall: scripts/build_lvgl_shared.sh
