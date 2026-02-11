@@ -1,5 +1,5 @@
 name: lvgl
-version: 9.4.0
+version: 9.4.0-usetest
 license: MIT
 repository: https://github.com/lvgl/lvgl
 
