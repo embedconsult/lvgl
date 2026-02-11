@@ -17,7 +17,8 @@ clang \
   -I"$ROOT_DIR" \
   -I"$ROOT_DIR/src" \
   -DLV_CONF_SKIP=1 \
+  -DLV_USE_TEST=1 \
   "${SOURCES[@]}" \
   -o "$OUTPUT_LIB"
 
-echo "Built $OUTPUT_LIB"
+echo "Built $OUTPUT_LIB with LV_USE_TEST=1"
