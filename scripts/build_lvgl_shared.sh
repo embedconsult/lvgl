@@ -19,7 +19,8 @@ clang \
   -DLV_CONF_SKIP=1 \
   -DLV_USE_TEST=1 \
   -DLV_USE_SNAPSHOT=1 \
+  -DLV_USE_SDL=1 \
   "${SOURCES[@]}" \
   -o "$OUTPUT_LIB"
 
-echo "Built $OUTPUT_LIB with LV_USE_TEST=1 and LV_USE_SNAPSHOT=1"
+echo "Built $OUTPUT_LIB with TEST, SNAPSHOT, and SDL support"
