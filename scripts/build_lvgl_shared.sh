@@ -20,7 +20,10 @@ clang \
   -DLV_USE_TEST=1 \
   -DLV_USE_SNAPSHOT=1 \
   -DLV_USE_SDL=1 \
+  -DLV_USE_COLOR_FILTER=1 \
+  $(pkg-config --cflags sdl2) \
+  $(pkg-config --libs sdl2) \
   "${SOURCES[@]}" \
   -o "$OUTPUT_LIB"
 
-echo "Built $OUTPUT_LIB with TEST, SNAPSHOT, and SDL support"
+echo "Built $OUTPUT_LIB with TEST, SNAPSHOT, SDL, and COLOR_FILTER support"
